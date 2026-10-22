@@ -1,0 +1,33 @@
+# Build outputs
+MDK-ARM/observer01/
+MDK-ARM/build/
+**/Objects/
+**/Listings/
+*.o
+*.obj
+*.d
+*.crf
+*.axf
+*.elf
+*.hex
+*.bin
+*.lst
+*.map
+*.build_log.htm
+*.log
+
+# Local IDE state and backups
+*.uvguix.*
+*.uvoptx
+*.bak
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key

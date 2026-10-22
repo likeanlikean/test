@@ -1,0 +1,249 @@
+version: "4.1"
+name: observer01
+type: ARM
+deviceName: null
+packDir: null
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: Application
+      files: []
+      folders:
+        - name: MDK-ARM
+          files:
+            - path: startup_stm32g431xx.s
+          folders: []
+        - name: User
+          files:
+            - path: ../Src/main.c
+            - path: ../Src/motorcontrol.c
+            - path: ../Src/speed_torq_ctrl.c
+            - path: ../Src/pwm_common.c
+            - path: ../Src/mc_api.c
+            - path: ../Src/mc_config.c
+            - path: ../Src/mc_config_common.c
+            - path: ../Src/mcp_config.c
+            - path: ../Src/mc_tasks.c
+            - path: ../Src/mc_tasks_foc.c
+            - path: ../Src/pwm_curr_fdbk.c
+            - path: ../Src/regular_conversion_manager.c
+            - path: ../Src/mc_math.c
+            - path: ../Src/mc_interface.c
+            - path: ../Src/stm32_mc_common_it.c
+            - path: ../Src/stm32g4xx_mc_it.c
+            - path: ../Src/mc_parameters.c
+            - path: ../Src/hf_registers.c
+            - path: ../Src/sync_registers.c
+            - path: ../Src/mcp.c
+            - path: ../Src/usart_aspep_driver.c
+            - path: ../Src/mc_configuration_registers.c
+            - path: ../Src/aspep.c
+            - path: ../Src/mc_app_hooks.c
+            - path: ../Src/stm32g4xx_it.c
+            - path: ../Src/stm32g4xx_hal_msp.c
+          folders: []
+    - name: ::CMSIS
+      files: []
+      folders: []
+    - name: Drivers
+      files: []
+      folders:
+        - name: STM32G4xx_HAL_Driver
+          files:
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_comp.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cordic.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp_ex.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c
+            - path: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c
+          folders: []
+        - name: CMSIS
+          files:
+            - path: ../Src/system_stm32g4xx.c
+          folders: []
+    - name: Middlewares
+      files: []
+      folders:
+        - name: MotorControl
+          files:
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_pll_speed_pos_fdbk.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/G4xx/Src/r3_2_g4xx_pwm_curr_fdbk.c
+            - path: ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c
+          folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: bfe19504c88946c09b078f8fa06e307d
+targets:
+  observer01:
+    cppPreprocessAttrs:
+      defineList:
+        - ARM_MATH_CM4
+        - USE_HAL_DRIVER
+        - STM32G431xx
+      incList:
+        - ../Inc
+        - ../Drivers/STM32G4xx_HAL_Driver/Inc
+        - ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy
+        - ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Inc
+        - ../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/G4xx/Inc
+        - ../Drivers/CMSIS/Device/ST/STM32G4xx/Include
+        - ../Drivers/CMSIS/Include
+        - ../Drivers/CMSIS/DSP/Include
+        - .cmsis/include
+        - RTE/_observer01
+      libList: []
+    excludeList: []
+    settings:
+      debugger: cortex-debug
+    toolchain: AC5
+    toolchainConfigMap:
+      AC5:
+        archExtensions: ""
+        cpuType: Cortex-M4
+        floatingPointHardware: single
+        options:
+          version: 4
+          afterBuildTasks: []
+          asm-compiler:
+            defines: []
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            CXX_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            C_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            c99-mode: true
+            one-elf-section-per-function: true
+            optimization: level-3
+            warnings: all-warnings
+          global:
+            output-debug-info: enable
+            use-microLIB: false
+          linker:
+            $outputTaskExcludes:
+              - .bin
+            output-format: elf
+            ro-base: "0x08000000"
+            rw-base: "0x20000000"
+            xo-base: ""
+        scatterFilePath: ""
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 3
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 1
+              isChecked: true
+              mem:
+                size: ""
+                startAddr: ""
+              noInit: false
+              tag: IRAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 3
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: ""
+                startAddr: ""
+              tag: IROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: IROM
+        useCustomScatterFile: false
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+    uploader: JLink
