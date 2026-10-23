@@ -167,7 +167,8 @@ const R3_2_Params_t R3_2_ParamsM1 =
 
 };
 
-ScaleParams_t scaleParams_M1 ={
+ScaleParams_t scaleParams_M1 =
+{
  .voltage = NOMINAL_BUS_VOLTAGE_V/(1.73205 * 32767), /* sqrt(3) = 1.73205 */
  .current = CURRENT_CONV_FACTOR_INV,
  .frequency = U_RPM/SPEED_UNIT

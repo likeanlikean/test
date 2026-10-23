@@ -173,7 +173,7 @@
         <define key="M1_PHASE2_DURATION" value="2400" />
         <define key="M1_PHASE2_FINAL_CURRENT" value="5" />
         <define key="M1_PHASE2_FINAL_SPEED_RPM" value="1200" />
-        <define key="M1_PHASE3_DURATION" value="3000" />
+        <define key="M1_PHASE3_DURATION" value="0" />
         <define key="M1_PHASE3_FINAL_CURRENT" value="5" />
         <define key="M1_PHASE3_FINAL_SPEED_RPM" value="1200" />
         <define key="M1_PHASE4_DURATION" value="0" />
