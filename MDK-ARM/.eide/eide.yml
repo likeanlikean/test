@@ -3,7 +3,8 @@ name: observer01
 type: ARM
 deviceName: null
 packDir: null
-srcDirs: []
+srcDirs:
+  - ../hfi
 virtualFolder:
   name: <virtual_root>
   files: []

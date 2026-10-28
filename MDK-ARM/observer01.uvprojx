@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define>ARM_MATH_CM4,USE_HAL_DRIVER,STM32G431xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32G4xx_HAL_Driver/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Inc;../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/G4xx/Inc;../Drivers/CMSIS/Device/ST/STM32G4xx/Include;../Drivers/CMSIS/Include;../Drivers/CMSIS/DSP/Include</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32G4xx_HAL_Driver/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/Any/Inc;../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/G4xx/Inc;../Drivers/CMSIS/Device/ST/STM32G4xx/Include;../Drivers/CMSIS/Include;../Drivers/CMSIS/DSP/Include;..\hfi</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -865,6 +865,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>hfi</GroupName>
+          <Files>
+            <File>
+              <FileName>hfi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hfi\hfi.c</FilePath>
+            </File>
+            <File>
+              <FileName>hfi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\hfi\hfi.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
@@ -883,5 +898,14 @@
     </components>
     <files/>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>observer01</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>
